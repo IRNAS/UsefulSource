@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1">
+
+  <xs:element name="instructions" type="typeInstructions"/>
+  <xs:complexType name="typeInstructions">
+     <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="parts" type="typeParts"/>
+            <xs:element name="tools" type="typeTools"/>
+            <xs:element name="video" type="typeVideo" minOccurs="0"/>
+            <xs:element name="steps" type="typeSteps"/>
+            <xs:element name="image" type="xs:normalizedString" minOccurs="0"/>
+     </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="typeParts">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="part" type="typePart"  maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="typePart">
+        <xs:all>
+            <xs:element name="module" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="quantity" type="xs:string" minOccurs="0"/>
+            <xs:element name="unit" type="xs:string" minOccurs="0"/>
+        </xs:all>
+        <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="typeTools">
+        <xs:sequence>
+            <xs:element name="tool" type="typeTool"  maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeTool">
+        <xs:all>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="price" type="xs:string" minOccurs="0"/>
+            <xs:element name="image" type="xs:normalizedString" minOccurs="0"/>
+            <xs:element name="url" type="xs:normalizedString" minOccurs="0"/>
+        </xs:all>
+        <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="typeSteps">
+        <xs:sequence>
+            <xs:element name="step" type="typeStep"  maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeStep">
+        <xs:all>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="sub_steps" type="typeSub_steps"/>
+
+        </xs:all>
+        <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="typeSub_steps">
+        <xs:sequence>
+            <xs:element name="sub_step" type="typeSub_step"  maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeSub_step">
+        <xs:all>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="video" type="typeVideo" minOccurs="0"/>
+            <xs:element name="image" type="xs:normalizedString" minOccurs="0"/>
+            <xs:element name="step_parts" type="typeStep_parts" minOccurs="0"/>
+        </xs:all>
+        <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="typeStep_parts">
+        <xs:sequence>
+            <xs:element name="step_part" type="typeStep_part"  maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeStep_part">
+        <xs:all>
+            <xs:element name="parts" type="xs:positiveInteger"/>
+            <xs:element name="part" type="xs:positiveInteger"/>
+            <xs:element name="quantity" type="xs:positiveInteger" minOccurs="0"/>
+        </xs:all>
+        <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="typeVideo">
+        <xs:all>
+            <xs:element name="description" type="xs:token" minOccurs="0"/>
+            <xs:element name="url" type="xs:normalizedString" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+
+</xs:schema>
+
+
+
+
+
+
