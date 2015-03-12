@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="instructions.xsl"?>
 <instructions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="instructions-schema.xsd">
-  <name>3-D TISKALNIK Troublemaker</name>
-  <description>Navodila za sestavljanje tiskalnika Troublemaker v 100 ali več korakih.</description>
-  <image>img\step6_8.jpg</image>
+  <name>3-D TISKALNIK ULTIMAKER</name>
+  <description>Navodila za sestavljanje tiskalnika Elektronik.si Ultimaker v 100 ali več korakih.</description>
+  <image>img/printer2.jpg</image>
   
   <parts order="1">
   <name>Ohišje</name>
@@ -438,10 +438,10 @@
       <sub_steps>
          <sub_step order="1">
           <description>Euro-šuko napajalni kabel.</description>
-          <image>img\step1_1.jpg</image>
+          <image>img/step1_1.jpg</image>
         </sub_step>
          <sub_step order="2">
-            <image>img\step1_2.jpg</image>
+            <image>img/step1_2.jpg</image>
             <description>Pripravi 230V kabel 20cm dolžine, odstrani 3cm zunanje izolacije na eni strani in 5cm na drugi strani. Na strani z 3cm odstranjene zunanje izolacije dodaj na vse tri vodnike votlice, na drugi strani odstrani izolacijo posameznih vodnikov v dolžini 10mm.</description>
          </sub_step>
       </sub_steps>
@@ -453,7 +453,7 @@
       <sub_steps>
         <sub_step order="1">
           <description>Grelec in 1mm^2 kabel (svetli).</description>
-          <image>img\step2_1.jpg</image>
+          <image>img/step2_1.jpg</image>
           <step_parts>
         <step_part order="1">
            <parts>6</parts>
@@ -474,55 +474,55 @@
         </sub_step>
         <sub_step order="2">
           <description>Podaljšaj kabel grelca za 50cm, dodaj na konec votlice.</description>
-          <image>img\step2_2.jpg</image>
+          <image>img/step2_2.jpg</image>
         </sub_step>
         <sub_step order="3">
-          <image>img\step2_3.jpg</image>
+          <image>img/step2_3.jpg</image>
           <description>Iz škatle vzami 6 končnih stikal in flat kabel 16pin konektor, ki si ga dobil zraven elektronike.</description>
         </sub_step>
         <sub_step order="4">
-          <image>img\step2_4.jpg</image>
+          <image>img/step2_4.jpg</image>
           <description>Na falt kablu za laserskim zarezom odstrani izolacijo skoraj do konca, vendar ne povsem in pospajkaj posamezne vodnike.</description>
         </sub_step>
         <sub_step order="5">
-          <image>img\step2_5.jpg</image>
+          <image>img/step2_5.jpg</image>
           <description>Nato odstrani izolacijo in stisni flat konektor na kabel.</description>
         </sub_step>
         <sub_step order="6">
-          <image>img\step2_6.jpg</image>
+          <image>img/step2_6.jpg</image>
           <description>Vreži M3 navoje v luknje stikal.</description>
         </sub_step>
         <sub_step order="7">
-          <image>img\step2_7.jpg</image>
+          <image>img/step2_7.jpg</image>
           <description>Odstrani 4 neuporabljene vodnike in razcepi vodnike po dvojicah v dolžini 1m. Upoštevaj razpored vgraviran na sprednji stranici.
           Priporočeno skrajšaj kable na sledeče dolžine: Xmin, Ymin, Xmax - 65cm, Zmax -  85cm</description>
         </sub_step>
         <sub_step order="8">
-          <image>img\step2_8.jpg</image>
+          <image>img/step2_8.jpg</image>
           <description>Prispajkaj vodnike na C in NO kontakte stikala.</description>
         </sub_step>
         <sub_step order="9">
-          <image>img\step2_9.jpg</image>
+          <image>img/step2_9.jpg</image>
           <description>Na stikala napiši na katero os in +/- stran spadajo.</description>
         </sub_step>
         <sub_step order="10">
-          <image>img\step2_10.jpg</image>
+          <image>img/step2_10.jpg</image>
           <description>Na vtičnico prispajkaj pripravljen 230V kabel. Po potrebi uporabi termoskrčke.</description>
         </sub_step>
         <sub_step order="11">
-           <image>img\step2_11.png</image>
+           <image>img/step2_11.png</image>
           <description>Podaljšaj kabel enega koračnika za 15cm.</description>
         </sub_step>
         <sub_step order="12">
-          <image>img\step2_12.jpg</image>
+          <image>img/step2_12.jpg</image>
           <description>Pripravi kabel 140cm dolg 8 žilni kabel za glavo. Zunanjo izloacijo kabela olupi na eni strani v dolžini 5cm, na drugi pa v dolžini 15cm. Olupi konce vodnikov in jih pospajkaj. Dodaj ventilatorje na krajšo stran. Uporabi termoskrčke.</description>
         </sub_step>
         <sub_step order="13">
-          <image>img\step2_13.jpg</image>
+          <image>img/step2_13.jpg</image>
           <description>Pripravi kable za napajanje koračnikov. 3 kosi po 12cm in en 25cm. Sestavi v zaporedno verigo z votlicami.</description>
         </sub_step>
         <sub_step order="14">
-          <image>img\step2_14.jpg</image>
+          <image>img/step2_14.jpg</image>
           <description>Pripravi flat kable. 4 kose dolžine 40cm.</description>
         </sub_step>
       </sub_steps>
@@ -535,55 +535,55 @@
           <description>Poiščeš vseh 6 stranic. Zadnja je polna in ima kup raznih izrezov. Leva ima odprtino za napajalno vtičnico. Sprednja ima logotip in izrez za LCD zaslon. Zgornja izgleda kot okvir in ima na eni strani napise.</description>
         </sub_step>
         <sub_step order="2">
-          <image>img\step3_2.jpg</image>
+          <image>img/step3_2.jpg</image>
           <description>Sprednjo stranico položi na mizo z logotipom navzdol. Vstavi spodnjo (napisi dol) in zgornjo stranico (napisi gor). PAZI, da so luknje na zgornji stranici na enaki strani kot na spodnji. </description>
         </sub_step>
         <sub_step order="3">
-          <image>img\step3_3.jpg</image>
+          <image>img/step3_3.jpg</image>
           <description>Dodaj zadnjo stranico (polna z luknjami, izrez za koračnika levo).</description>
         </sub_step>
         <sub_step order="4">
-          <image>img\step3_4.jpg</image>
+          <image>img/step3_4.jpg</image>
           <description>Postavi sestav na desno stran in dodaj končna stikala v izreze v vogalih. Upoštevaj napise na zgornji stranici, ki povedo kam spada katero stikalo. Dodaj levo stranico (ima izrez za napajalno vtičnico in koračnik, oboje obrnjeno nazaj).</description>
         </sub_step>
         <sub_step order="5">
-          <image>img\step3_5.jpg</image>
+          <image>img/step3_5.jpg</image>
           <description>Postavi sestav na levo stranico. Napelji stikala. Xmax v sprednjem desnem kotu.</description>
         </sub_step>
         <sub_step order="6">
-          <image>img\step3_6.jpg</image>
+          <image>img/step3_6.jpg</image>
           <description>Dodaj desno stranico, raven rob notranjega izreza je v smeri nazaj.</description>
         </sub_step>
         <sub_step order="7">
-          <image>img\step3_7.jpg</image>
+          <image>img/step3_7.jpg</image>
           <description>Privijači ohišje z 16mm torx vijaki, M3 podložkami in štirikotnimi maticami. Pazi, da vijakov ne zategneš preveč</description>
         </sub_step>
         <sub_step order="8">
-          <image>img\step3_8.jpg</image>
+          <image>img/step3_8.jpg</image>
           <description>Pri vstavljanju kvadratnih matic si lahko pomagaš z magnetom na palčki ali pa lepilnim trakom.</description>
         </sub_step>
         <sub_step order="9">
-          <image>img\step3_9.jpg</image>
+          <image>img/step3_9.jpg</image>
           <description>Privijači končna stikala z 10mm torx vijaki, dodaj podložke, jeziček obrnjen dol in proti sredini. Zmax stikalu je treba odščipniti jeziček, da je enako dolg kot ohišje. Namontira se na zadnjo stranico pod spodnjo stranico, z jezičkom navzgor in proti stranici.</description>
         </sub_step>
         <sub_step order="10">
-          <image>img\step3_10.jpg</image>
+          <image>img/step3_10.jpg</image>
           <description>Dodaj kosa 21-*-6 na spodnjo stranico na spodnjo stran, da pokrijeta luknje za Z vodila.</description>
         </sub_step>
         <sub_step order="11">
-          <image>img\step3_11.jpg</image>
+          <image>img/step3_11.jpg</image>
           <description>Privijači kos 15-*-6 v center zadnje stranice z M3 16mm dolžine, glava vijaka naj bo na notranji strani.</description>
         </sub_step>
         <sub_step order="12">
-          <image>img\step3_12.jpg</image>
+          <image>img/step3_12.jpg</image>
           <description>Poišči 8 malih ležajev iz škatle.</description>
         </sub_step>
         <sub_step order="13">
-          <image>img\step3_13.jpg</image>
+          <image>img/step3_13.jpg</image>
           <description>Vstavi ležaje v luknje v ohišju. Prilegajo se izjemno tesno, vendar jih vseeno lahko vtisneš s prsti.</description>
         </sub_step>
         <sub_step order="14">
-          <image>img\step3_14.jpg</image>
+          <image>img/step3_14.jpg</image>
           <description>Pokrovčke 3-*-4 namontiraj na zunanjo stran ležajev, 4-*-4 pa na notranjo stran. Pritrdi z vijakom M3 16mm torx, brez podložk z navadnimi maticami. Pritrdi samo na eni luknji. Notranjega pokrovčka ne dodaj na levi stranici pri zadnjem ležaju.</description>
         </sub_step>
         
@@ -594,23 +594,23 @@
       <name>4. SESTAVLJANJE VOZIČKOV</name>
       <sub_steps>
         <sub_step order="1">
-          <image>img\step4_1.jpg</image>
+          <image>img/step4_1.jpg</image>
           <description>Zberi dele: 1-*-4 8kom, 2-*-4 4kom, 23-*-6 4kom, 22-*-6 8kom, 25-*-6 2kom, 24-*-6 1kom , 26-*-6 1kom. </description>
         </sub_step>
         <sub_step order="2">
-          <image>img\step4_2.jpg</image>
+          <image>img/step4_2.jpg</image>
           <description>V kose 2-*-4 4kom vstavi M3 10mm torx in kvadratno matico na drugi strani, ne zategni!.</description>
         </sub_step>
         <sub_step order="3">
-          <image>img\step4_3.jpg</image>
+          <image>img/step4_3.jpg</image>
           <description>V kose 23-*-6 vstavi M3 10mm torx v sredinsko luknjo, in uporabi navadno matico in zategni.</description>
         </sub_step>
         <sub_step order="4">
-          <image>img\step4_4.jpg</image>
+          <image>img/step4_4.jpg</image>
           <description>Sestavi voziček kot sendvič. Od vrha navzdol, napisi gor: 1-*-4, 22-*-6, v istem nivoju (25-*-6 ali 24-*-6 ali 26-*-6) in 23-*-6, 22-*-6, 1-*-4..</description>
         </sub_step>
         <sub_step order="5">
-          <image>img\step4_5.jpg</image>
+          <image>img/step4_5.jpg</image>
           <description>Vstavi vijake M3 imbus 30mm brez podložk v 3 luknje, glej sliko. Dodaj navadne M3 matice, ne uporabljaj podložk. POZOR, ne zateguj!</description>
         </sub_step>
       </sub_steps>
@@ -620,72 +620,72 @@
       <name>5. SESTAVLJANJE MIZE</name>
       <sub_steps>
          <sub_step order="1">
-          <image>img\step5_1.jpg</image>
+          <image>img/step5_1.jpg</image>
           <description>Zberi dele: 10-*-4 4kom, 11-*-4 4kom, 11-*-6 2kom, 10-*-6 1kom, 3-*-6 1kom (L kos), 11-*-6 2kom, 3-*-6 1kom (kvadraten kos), 30- *-6 1kom, 9-*-6 2kom, 7-*-6 2kom, 31-*-6 2kom, 16-*-6 1kom (Tkomad), Ležaji 12mm, Z matica</description>
         </sub_step>
         <sub_step order="2">
-          <image>img\step5_2.jpg</image>
+          <image>img/step5_2.jpg</image>
           <description>Kosa 31-*-6 obdelaj z nožem kot je prikazano na sliki. Posnami vogal pod kotom 45stopinj približno za 2mm na robu notranjega izreza.</description>
         </sub_step>
         <sub_step order="3">
-          <image>img\step5_3.jpg</image>
+          <image>img/step5_3.jpg</image>
           <description>Na Z matico natakni kosa 31-*-6.</description>
         </sub_step>
         <sub_step order="4">
-          <image>img\step5_4.jpg</image>
+          <image>img/step5_4.jpg</image>
           <description>Nato vse skupaj vstavi med kos 3-*-6 1kom (kvadraten kos) in 30-*-6.</description>
         </sub_step>
         <sub_step order="5">
-          <image>img\step5_5.jpg</image>
+          <image>img/step5_5.jpg</image>
           <description>Sendvič leva roka mize. 3-*-6 1kom (L kos), 10-*-4 in 11-*-4 na istem nivoju, 11-*-6, 10-*-4 in 11-*-4, 9-*-6. Uporabiš M3 imbus 30mm vijake in podložke. Na levi strani ima L kos zob gor in dol.
           Sendvič desna roka mize. 10-*-6 1kom (L kos), 10-*-4 in 11-*-4 na istem nivoju, 11-*-6, 10-*-4 in 11-*-4, 9-*-6. Uporabiš M3 imbus 30mm vijake in podložke.</description>
         </sub_step>
         <sub_step order="6">
-          <image>img\step5_6.jpg</image>
+          <image>img/step5_6.jpg</image>
           <description>Zberi dele kot je prikazano na sliki.</description>
         </sub_step>
         <sub_step order="7">
-          <image>img\step5_7.jpg</image>
+          <image>img/step5_7.jpg</image>
           <description>Vstavi ležaje v roke.</description>
         </sub_step>
         <sub_step order="8">
-          <image>img\step5_8.jpg</image>
+          <image>img/step5_8.jpg</image>
           <description>Sestavi posamezne roke (na sliki je desna roka).</description>
         </sub_step>
         <sub_step order="9">
-          <image>img\step5_9.jpg</image>
+          <image>img/step5_9.jpg</image>
           <description>Leva in desna roka, sestavljeni.</description>
         </sub_step>
         <sub_step order="10">
-          <image>img\step5_10.jpg</image>
+          <image>img/step5_10.jpg</image>
           <description>Vstavi sredinski kos z Z matico v levo roko. Poglobljen del sredinskega dela je obrnjen navzdol. Vstavi kvadratne matice in privijači.</description>
         </sub_step>
         <sub_step order="11">
-          <image>img\step5_11.jpg</image>
+          <image>img/step5_11.jpg</image>
           <description>Vstavi T kos v levo roko, dodaj kvadratne matice in privijači.</description>
         </sub_step>
         <sub_step order="12">
-          <image>img\step5_12.jpg</image>
+          <image>img/step5_12.jpg</image>
           <description>Združi z desno roko, vstavi kvadratne matice in privijači.</description>
         </sub_step>
         <sub_step order="13">
-          <image>img\step5_13.jpg</image>
+          <image>img/step5_13.jpg</image>
           <description>Miza pripravljena za montažo.</description>
         </sub_step>
         <sub_step order="14">
-          <image>img\step5_14.jpg</image>
+          <image>img/step5_14.jpg</image>
           <description>Pripravi tiskalno površino iz kompakt plošče (temno rjava). V 3 luknje vstavi M4 vijake, izpusti tisto na sredini kjer so so 3 skupine lukenj. Na vijake dodaj vzmeti in na vrh podložke.</description>
         </sub_step>
         <sub_step order="15">
-          <image>img\step5_15.jpg</image>
+          <image>img/step5_15.jpg</image>
           <description>Sestavi s tiskalno mizo, uporabi krilate matice z podložkami.</description>
         </sub_step>
         <sub_step order="16">
-          <image>img\step5_16.jpg</image>
+          <image>img/step5_16.jpg</image>
           <description>Sestaviš sendvič delov 42-*-6, 41-*-6, 40-*-4 2kom, 41-*-6, 42-*-6.</description>
         </sub_step>
         <sub_step order="17">
-          <image>img\step5_17.jpg</image>
+          <image>img/step5_17.jpg</image>
           <description>Uporabiš vijake M3 30mm in M3 40mm.</description>
         </sub_step>
 
@@ -696,95 +696,95 @@
       <name>6. SESTAVLJANJE MEHANIKE</name>
       <sub_steps>
         <sub_step order="1">
-          <image>img\step6_1.jpg</image>
+          <image>img/step6_1.jpg</image>
           <description>Sprednji voziček je tisti z majhnim stranskim zobom, levi voziček je tisti z velikim stranskim zobom. Desni in zadnji sta enaka.</description>
         </sub_step>
         <sub_step order="2">
-          <image>img\step6_2.jpg</image>
+          <image>img/step6_2.jpg</image>
           <description>Na vozičkih odpri ročico za jermen in vstavi jermen. Zobati del je navzgor proti ročici, stran od luknje. Zapri ročico za jermen in s strani vstavi kos 2-*-4 in ne zateguj.</description>
         </sub_step>
         <sub_step order="3">
-          <image>img\step6_3.jpg</image>
+          <image>img/step6_3.jpg</image>
           <description>V jermenice vstavi vijake, uporabi 1.5mm imbus.</description>
         </sub_step>
         <sub_step order="4">
-        <image>img\step6_4.jpg</image>
+        <image>img/step6_4.jpg</image>
           <description>V vozičke vstavi 8 kosov drsnih puš. Preostalih 8kosov je za rezervo. Zaoblji robove vodil!!! Vstavi vozičke na vodila in jih razgibaj.</description>
         </sub_step>
         <sub_step order="5">
-          <image>img\step6_5.jpg</image>
+          <image>img/step6_5.jpg</image>
           <description>Dva para vodil različnih dolžin sta v kompletu, daljši par je za Y os, krajši za X os.</description>
         </sub_step>
         <sub_step order="6">
-          <image>img\step6_6.jpg</image>
+          <image>img/step6_6.jpg</image>
           <description>Daljši par je za Y os, krajši za X os</description>
         </sub_step>
         <sub_step order="7">
-          <image>img\step6_7.jpg</image>
+          <image>img/step6_7.jpg</image>
           <description>Začni z krajšim vodilom in vstavljanjem le tega na levi stranici skozi zadnji ležaj. Vstavi vodilo za nekaj centimetrov, dodaj jermenico z tanko prirobnico proti strani in na njo krajši jermen. Nato dodaj še eno enako orientirano jermenico in nanjo obesi levi voziček (z velikim zobom), obrnjeno z zobom proti stranici in jermenom nad vozičkom. Nato na vodilo vstavi zadnji voziček, obrnjen tako, da je jermen pod vozičkom.</description>
         </sub_step>
         <sub_step order="8">
-          <image>img\step6_8.jpg</image>
+          <image>img/step6_8.jpg</image>
           <description>Dodaj še tretjo jermenico, ki je obrnjena z tanko prirobnico proti desni stranici in nanjo obesi desni voziček, tako da je jermen nad vozičkom.</description>
         </sub_step>
         <sub_step order="9">
-          <image>img\step6_9.jpg</image>
+          <image>img/step6_9.jpg</image>
           <description>Vstavljeno zadnje vodilo z jermeni, vozički in jermenicami.</description>
         </sub_step>
         <sub_step order="10">
-          <image>img\step6_10.jpg</image>
+          <image>img/step6_10.jpg</image>
           <description>Vstavi sprednje vodilo, nanj jermenico z prirobnico proti stranici ter jermen levega ali desnega vozička. Nato vstavi sprednji voziček (mali zob), obrnjen tako, da je jermen pod vozičkom. Nato dodaj še jermenico z prirobnico proti stranici ter jermen levega ali desnega vozička.</description>
         </sub_step>
         <sub_step order="11">
-          <image>img\step6_11.jpg</image>
+          <image>img/step6_11.jpg</image>
           <description>Vstavi desno vodilo, dodaj jermenic z tanko prirobnico proti stranici zadnji stranici, nanjo obesi kratek jermen. Dodaj še eno enako orientirano jermenico in najo jermen zadnjega vozička</description>
         </sub_step>
         <sub_step order="12">
-          <image>img\step6_12.jpg</image>
+          <image>img/step6_12.jpg</image>
           <description>Na desno vodilo dodaj še jermenico in in jermen sprednjega vozička.</description>
         </sub_step>
         <sub_step order="13">
-          <image>img\step6_13.jpg</image>
+          <image>img/step6_13.jpg</image>
           <description>Vstavi levo vodilo, dodaj jermenic z tanko prirobnico proti stranici zadnji stranici in najo jermen zadnjega vozička.</description>
         </sub_step>
         <sub_step order="14">
-          <image>img\step6_14.jpg</image>
+          <image>img/step6_14.jpg</image>
           <description>Na levo vodilo dodaj še jermenico in in jermen sprednjega vozička.</description>
         </sub_step>
         <sub_step order="15">
-          <image>img\step6_15.jpg</image>
+          <image>img/step6_15.jpg</image>
           <description>Na koračnike namontiraj jermenice in dodaj sendvič lesenih distančnikov: 33-*-6, 9-*-4, 33-*-6. Za montažo uporabi 25mm dolge imbus vijake in podložke. Jermenice dodaj na dva motorja, ozka prirobnica proti motorju, en z kratkimi in en z dolgimi jermeni. </description>
         </sub_step>
         <sub_step order="16">
-          <image>img\step6_16.jpg</image>
+          <image>img/step6_16.jpg</image>
           <description>Pritrdi koračnik z daljšimi kabli na levo stranico.</description>
         </sub_step>
         <sub_step order="17">
-          <image>img\step6_17.jpg</image>
+          <image>img/step6_17.jpg</image>
           <description>Pritrdi koračnik normalno dolgimi kabli na zadnjo stranico.</description>
         </sub_step>
         <sub_step order="18">
-          <image>img\step6_18.jpg</image>
+          <image>img/step6_18.jpg</image>
           <description>Na koračnik dodaj sklopko, nato pritrdi koračnik na spodnjo stranico.</description>
         </sub_step>
         <sub_step order="19">
-          <image>img\step6_19.jpg</image>
+          <image>img/step6_19.jpg</image>
           <description>Tiskalnik pripravljen za vstavljanje mize in Z vodil.</description>
         </sub_step>
         <sub_step order="20">
-          <image>img\step6_20.jpg</image>
+          <image>img/step6_20.jpg</image>
           <description>Vstavi mizo v tiskalnik, tako da lepo sede na spodnjo stranico. Zob na levi roki gre skozi stranico in pritisne na končno stikalo.</description>
         </sub_step>
         <sub_step order="21">
-          <image>img\step6_21.jpg</image>
+          <image>img/step6_21.jpg</image>
           <description>Vstavi 12mm vodila skozi luknje na zgornji stranici.</description>
         </sub_step>
         <sub_step order="22">
-          <image>img\step6_22.jpg</image>
+          <image>img/step6_22.jpg</image>
           <description>Z vrha vstavi vreteno in ga privij skozi matico, tako da se miza dvigne do polovice. Zategni vijake na CNC sklopki.</description>
         </sub_step>
         <sub_step order="23">
-          <image>img\step6_23.jpg</image>
+          <image>img/step6_23.jpg</image>
           <description>Dodaj kosa 21-*-6 na vrh zgornje stranico, da pokrijeta luknje za Z vodila. Pritrdi z M3 16mm vijaki in navadnimi maticami.</description>
         </sub_step>
 
@@ -795,59 +795,59 @@
       <name>7. PRIPRAVA IN MONTAŽA TISKALNEGA SKLOPA</name>
       <sub_steps>
           <sub_step order="1">
-          <image>img\step7_1.jpg</image>
+          <image>img/step7_1.jpg</image>
           <description>Potrebuješ šobo, grelni blok, hladilnik in povezovalni vijak, grelec in termočlen. </description>
         </sub_step>
         <sub_step order="2">
-          <image>img\step7_2.jpg</image>
+          <image>img/step7_2.jpg</image>
           <description>Privijač šobo v grelni blok, s strani na kateri je imbus vijak. Šobo privijač skoraj povsem do bloka, pustiš 1mm prostora.</description>
         </sub_step>
         <sub_step order="3">
-          <image>img\step7_3.jpg</image>
+          <image>img/step7_3.jpg</image>
           <description>Z druge strani privijači krajši del povezovalnega vijaka, previdno z njim, ne zateguj preveč. Privijači pnevmatski konektor v hladilnik tiskalne glave. Nato na povezovalni del privijači hladilnik, ne zateguj preveč</description>
         </sub_step>
         <sub_step order="4">
-          <image>img\step7_4.jpg</image>
+          <image>img/step7_4.jpg</image>
           <description>Vstavi grelec in ga pritrdiš z vijakom. Glej sliko, bodi pozoren s katere strani je vstavljen.</description>
         </sub_step>
         <sub_step order="5">
-          <image>img\step7_5.jpg</image>
+          <image>img/step7_5.jpg</image>
           <description>S termočlena odstrani skrčko in kovinski tulec, bodi izjemno previden. Kabel skrajšaj na 15cm. Kovinski oplet potegni preko termistorskega dela vsaj 5mm.</description>
         </sub_step>
         <sub_step order="6">
-          <image>img\step7_6.jpg</image>
+          <image>img/step7_6.jpg</image>
           <description>Pripravljen termočlen vstavi v luknjo v grelnem bloku in zapogni 3mm opleta na drugi strani luknje.</description>
         </sub_step>
         <sub_step order="7">
-          <image>img\step7_7.jpg</image>
+          <image>img/step7_7.jpg</image>
           <description>Z reamerjem očisti luknjo in vstavi po dva ležaja v vsako luknjo.</description>
         </sub_step>
         <sub_step order="8">
-          <image>img\step7_8.jpg</image>
+          <image>img/step7_8.jpg</image>
           <description>V zeleni plastični del vreži 7 M3 navojev, dva sta iz zadnje strani za mali ventilator. Nato vstavi pripravljeno glavo v nosilec.</description>
         </sub_step>
         <sub_step order="9">
-          <image>img\step7_9.jpg</image>
+          <image>img/step7_9.jpg</image>
           <description>Vstavi bovden, 8žilni kabel in kabel grelca v plastično cev. Privijači modero objemko nosilca. Luknje za vijake je morda potrebno povrtati z 3mm svedrom.</description>
         </sub_step>
         <sub_step order="10">
-          <image>img\step7_10.jpg</image>
+          <image>img/step7_10.jpg</image>
           <description>Sestavljena tiskalna glava.</description>
         </sub_step>
         <sub_step order="11">
-          <image>img\step7_11.jpg</image>
+          <image>img/step7_11.jpg</image>
           <description>Vreži navoj v rdeč del ekstruderja.</description>
         </sub_step>
         <sub_step order="12">
-          <image>img\step7_12.jpg</image>
+          <image>img/step7_12.jpg</image>
           <description>Dodaj ročko.</description>
         </sub_step>
         <sub_step order="13">
-          <image>img\step7_13.jpg</image>
+          <image>img/step7_13.jpg</image>
           <description>V nosilec ležaja dodaj ležaj z plastično osjo. Uporabi 25mm vijak za pritrditev drugega konca ročke.</description>
         </sub_step>
         <sub_step order="14">
-          <image>img\step7_14.jpg</image>
+          <image>img/step7_14.jpg</image>
           <description>Na koračnik z reduktorjem dodaj MK7 pogonski zobnik. Privijači ekstruder na koračnik z reduktorjem z M3 6mm vijaki s križno glavo.</description>
         </sub_step>
 
@@ -858,34 +858,34 @@
       <name>8. MONTAŽA ELEKTRONIKE</name>
       <sub_steps>
          <sub_step order="1">
-          <image>img\step8_1.jpg</image>
+          <image>img/step8_1.jpg</image>
           <description>Na elektroniko dodaj 10mm dolge distančnike</description>
         </sub_step>
         <sub_step order="2">
-          <image>img\step8_2.jpg</image>
+          <image>img/step8_2.jpg</image>
           <description>V dva vogala driverjev za koračnike dodaj 5mm dolge distančnike.</description>
         </sub_step>
         <sub_step order="3">
-          <image>img\step8_3.jpg</image>
+          <image>img/step8_3.jpg</image>
           <description>Vstavi elektroniko, koračnike, napajalnik kot prikazano na sliki in poveži kable. Doma z lepilom fiksiraj 230V vtičnico</description>
         </sub_step>
         <sub_step order="4">
-          <image>img\step8_4.jpg</image>
+          <image>img/step8_4.jpg</image>
           <description>Poveži napajanje driverjev z napajalnikom, uporabi 0.75mm^2 črno-rdeč kabel. Poveži koračnike z driverji. </description>
         </sub_step>
         <sub_step order="5">
           <description>Driverje nastavi na 1.5A. Microstepping nastavitve: 1/16 na X, Y. 1/8 na ekstruderju in Z osi.</description>
         </sub_step>
         <sub_step order="6">
-          <image>img\step8_6.jpg</image>
+          <image>img/step8_6.jpg</image>
           <description>Priklopi 8žilni kabel do glave. Upoštevaj pinout vgraviran na sprednji stranici. Preveri, da na elektroniki ni jumperja za napajanje pri USBju.</description>
         </sub_step>
         <sub_step order="7">
-          <image>img\step8_7.jpg</image>
+          <image>img/step8_7.jpg</image>
           <description>Mali ventilator priključimo neposredno na 24V na prvi sponki skupaj z dovodom. Veliki ventilator na sponko Fan.</description>
         </sub_step>
         <sub_step order="8">
-          <image>img\step8_8.jpg</image>
+          <image>img/step8_8.jpg</image>
           <description>Priključi vezje za termistor na 8 žilni kabel in termistor na to vezje. Upoštevaj pinout. Ploščico pritrdi na cev z vezico.</description>
         </sub_step>
 
