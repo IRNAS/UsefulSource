@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema elementFormDefault="qualified" version="1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="project" type="typeProject"/>
+    <xs:complexType name="typeProject">
+        <xs:sequence>
+            <xs:element name="unit_description" type="typeUnitDescription"/>
+            <xs:element name="modules" type="typeModules"/>
+            <xs:element name="physic_parts" type="typePhysic_parts" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="typeUnitDescription">
+        <xs:all>
+            <xs:element name="name" type="xs:normalizedString"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="long_description" type="xs:string" minOccurs="0"/>
+            <xs:element name="video" type="typeVideo" minOccurs="0"/>
+            <xs:element name="image" type="typeImage" minOccurs="0"/>
+            <xs:element name="what" type="xs:string" minOccurs="0"/>
+            <xs:element name="why" type="xs:string" minOccurs="0"/>
+            <xs:element name="how" type="xs:string" minOccurs="0"/>
+            <xs:element name="color" type="xs:normalizedString" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="typeVideo">
+        <xs:all>
+            <xs:element name="description" type="xs:token" minOccurs="0"/>
+            <xs:element name="url" type="xs:normalizedString" minOccurs="0"/>
+        </xs:all>
+    <xs:attribute name="url" type="xs:normalizedString"/>
+    </xs:complexType>
+    <xs:complexType name="typeImage">
+        <xs:all>
+            <xs:element name="description" type="xs:token" minOccurs="0"/>
+            <xs:element name="file" type="xs:normalizedString" minOccurs="1"/>
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="typeModules">
+        <xs:sequence>
+            <xs:element name="module" type="typeModule"  maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeModule">
+        <xs:sequence>
+            <xs:element name="unit_description" type="typeUnitDescription"/>
+            <xs:element name="sub_modules" type="typeSub_modules" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="typeSub_modules">
+        <xs:sequence>
+            <xs:element name="sub_module" type="typeSub_module"  maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeSub_module">
+        <xs:sequence>
+            <xs:element name="unit_description" type="typeUnitDescription"/>
+            <xs:element name="logic_parts" type="typeLogic_parts" minOccurs="0"/>
+
+        </xs:sequence>
+        <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="typeLogic_parts">
+        <xs:sequence>
+            <xs:element name="logic_part" type="typeLogic_part" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeLogic_part">
+        <xs:all>
+            <xs:element name="part_name" type="xs:string" minOccurs="0"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="quantity" type="xs:positiveInteger"/>
+            <xs:element name="schematic_id" type="xs:normalizedString"/>
+            <xs:element name="image" type="typeImageSingle" minOccurs="0"/>
+            <xs:element name="external_reference" type="typeExternalReference" minOccurs="0"/>
+            <xs:element name="options" type="typeOptions" minOccurs="0"/>
+            
+        </xs:all>
+        <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="typeOptions">
+        <xs:sequence>
+            <xs:element name="option" type="typeOption" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeOption">
+        <xs:all>
+            <xs:element name="part_name" type="xs:string" minOccurs="0"/>
+        </xs:all>
+        <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="typeImageSingle">
+        <xs:all>
+            <xs:element name="description" type="xs:token" minOccurs="0"/>
+        </xs:all>
+        <xs:attribute name="url" type="xs:normalizedString" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="typeExternalReference">
+        <xs:all>
+            <xs:element name="external_id" type="xs:normalizedString"/>
+            <xs:element name="external_source" type="typeExternalSource"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:simpleType name="typeExternalSource">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="octopart"/>
+            <xs:enumeration value="digikey"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="typePhysic_parts">
+        <xs:sequence>
+            <xs:element name="physic_part" type="typePhysic_part" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typePhysic_part">
+        <xs:all>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="part_name" type="xs:string"/>
+            <xs:element name="price" type="xs:string" minOccurs="0"/>
+            <xs:element name="image" type="typeImageSingle" minOccurs="0"/>
+            <xs:element name="external_reference" type="typeExternalReference" minOccurs="0"/>
+        </xs:all>
+        <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+</xs:schema>
+
+
+
+
+
+
+

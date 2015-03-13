@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="koruza1.xsl"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="koruza1-schema.xsd">
+
+<unit_description>
+  <name>KORUZA</name>
+  <video url="http://www.youtube.com/embed/yq6hBNCzH10">
+  	<description>Intro video</description>
+        <url>http://www.youtube.com/embed/yq6hBNCzH10</url>
+
+  </video>
+  <description>
+      KORUZA is a low cost, open source and open hardware, wireless optical system, making the free space optical (FSO) technology available to masses and providing an alternative to Wi-Fi networks.
+  </description>
+  <what>
+      Koruza innovates the design of a free space (FSO) communication system, with a low-cost, open source, open-hardware system, making the FSO
+technology available to masses. It enables everyone without specialised knowledge to set up ultra-fast  connections at a relatively low cost. Home users can thus simply establish the connection with a neighbour who has a broadband connection, or even the whole neighbourhood can create their own
+fast network, independent of profit driven service providers.
+
+  </what>
+  <why>
+      To enable the growth of ultrafast networks and empower individuals to take care of last-mile connectivity themselves.
+  </why>
+  <how>
+      Currently the system is available in a hacker/developer friendly open-source release on this site. In the near future we are preparing a DIY friendly release with a kit of assembly parts as well as the whole open.source tools set to set-up a micro-manufacturing plant to produce the units.
+	  
+	  This work is supported and sustained by Shuttleworth Foundation fellowship awarded to Luka Mustafa and your donations.
+  </how>
+</unit_description>
+
+<modules>
+  <module order="1">
+    <unit_description>
+      <name>0. LEGAL</name>
+      <description>
+        Light spectrum is not regulated by telecommunication laws, therefore the laser design is subjected only  to the eye-safety  regulations.
+      </description>
+      <long_description>
+      In the FSO communication a significant optical power is required due to communication channel attenuation, thus raising eye safety concerns. UK Health Protection Agency identifies eye safe laser operation if the product is classified as Class 1 or Class 1M. Maximum permissible exposure (MPE) time of the eye to an optical beam of specified power density must not be exceeded. A communication system with a continuous lasers source in the invisible range, thus excluding blink reflex, must be classified as Class 1M (safe for all conditions of use except when passed through magnifying optics).
+      Such regulations are sufficient, as a system under design is a point-to-point communication link. The user must be warned of the associated risks, so that individuals do not stand in the beam path. The latter is required for stable operation of the link in any case.
+      Approximate values for Class 1M of MPE and Maximum Accessible Emission Level Limit (AEL) for small sources with continuous emission are 1000Wm−2 and 10mW respectively. Detailed information about laser classification is provided in British Standard on Laser Safety, BS EN 60825-1:2007.
+      </long_description>
+      <color>rgba(1,46,5,0.7)</color>
+    </unit_description>
+    
+    <sub_modules>
+      <sub_module order="1">
+        <unit_description>
+          <name>0.0 LICENSING</name>
+          <description>AGPL and CERN OHL licenses.</description>
+          <color>rgba(0,97,4,0.7)</color>
+        </unit_description>
+
+      </sub_module>
+      <sub_module order="2">
+        <unit_description>
+          <name>0.1 LASER SAFETY</name>
+          <description>How does laser safety apply to this system.</description>
+          <color>rgba(0,148,6,0.7)</color>
+        </unit_description>
+      </sub_module>
+      
+      <sub_module order="3">
+        <unit_description>
+          <name>0.2 STANDARD COMPLIANCE</name>
+          <description>Does it have to or does it comply to any standards.</description>
+          <color>rgba(1,199,5,0.7)</color>
+        </unit_description>
+      </sub_module>
+
+    </sub_modules>
+  </module>
+  
+  
+  <module order="2">
+    <unit_description>
+      <name>1. OPTICAL - DATA</name>
+      <description>
+		Wireless optical communication by using standard fibre-optics SFP transceiver modules with collimation optics.
+      </description>
+      <long_description>
+	  KORUZA employs mass-produced fibre-optic SFP transceiver modules for wireless optical communication due to their low-cost and general availability. With the addition of a single lens collimation optics the invisible IR light is launched in the form of a well-collimated beam at the opposite unit, coupling the majority of the transmitted light ont he receiver aperture. Since SFP modules used are wavelength multiplexed and carry data in opposite directions at different wavelengths, only a single optical path is required significantly simplifying the overall design and making KORUZA as such possible.
+      </long_description>
+      <color>rgba(0,71,4,0.7)</color>
+    </unit_description>
+
+    <sub_modules>
+      <sub_module order="1">
+         <unit_description>
+           <name>1.0 TRANSCEIVER</name>
+           <description>
+           SFP optical modules as transceivers are widely used in optical networking and are available in many configurations. Based on the SFP MSA agreement the are rather independent on manufacturers although some end-equipment has a built-in vendor lock. For the purpose of wireless optical communication bi-directional SFP modules are used since only a single optical path is required for two way communication, simplifying the overall design and most importantly calibration. KORUZA as such supports any Bi-Di SFP modules although compatibility must be insured with the built-in media converter. A pair of complementary SFP modules is required to establish the link, one transmitting at the wavelength the other one is receiving and vice-versa. Appropriate connector type is SC only the other commonly available one LC blocks the optical path due to the mechanical constraints. Any available wavelength pair should work, recommended 1310/1550nm. The SFP module must support DDM monitoring, that enables reading the optical received power and other measurements via the I2C interface. SFP modules are classified according to the transmission distance, generally the longer the distance the better for KORUZA, however using more then 40km rated modules will not significantly improve the performance, just increase the cost. Note that for outdoor use, modules should have the extended temperature range -20 to 80 degrees C.
+           </description>
+            <color>rgba(0,97,4,0.7)</color>
+            <image>
+              <file>module_optical_transceiver.png</file>
+            </image>
+         </unit_description>
+
+         <logic_parts>
+           <logic_part order="1">
+             <part_name>SFP</part_name>
+             <description>40km module - 5 pairs</description>
+             <quantity>6</quantity>
+             <schematic_id>1</schematic_id>
+           </logic_part>
+           <logic_part order="2">
+             <part_name>SATA</part_name>
+             <description>10cm cable.</description>
+             <quantity>2</quantity>
+             <schematic_id>1</schematic_id>
+           </logic_part>
+           <logic_part order="3">
+             <part_name>SFP cage</part_name>
+             <description>SFP cage.</description>
+             <quantity>10</quantity>
+             <schematic_id>1</schematic_id>
+           </logic_part>
+           <logic_part order="4">
+             <part_name>SFP connector</part_name>
+             <description>SFP connector.</description>
+             <quantity>10</quantity>
+             <schematic_id>1</schematic_id>
+           </logic_part>
+         </logic_parts>
+      </sub_module>
+
+      <sub_module order="2">
+         <unit_description>
+           <name>1.1 COLLIMATION OPTICS</name>
+           <description>
+             A collimation lens with the convergence to focus the divergence half-angle from the SMF, insuring coupling to the BOSA, is used to focus the beam on the receiver and maximizing received power.
+           </description>
+            <color>rgba(0,148,6,0.7)</color>
+         </unit_description>
+         <logic_parts>
+           <logic_part order="1">
+             <part_name>Plano-convex lens</part_name>
+             <description>Plano-convex lens</description>
+             <quantity>20</quantity>
+             <schematic_id>1</schematic_id>
+           </logic_part>
+         </logic_parts>
+      </sub_module>
+      
+      <sub_module order="3">
+        <unit_description>
+          <name>1.2 SFP MONITORING</name>
+          <description>How to get data from SFP modules.</description>
+          <color>rgba(0,199,5,0.7)</color>
+        </unit_description>
+      </sub_module>
+    </sub_modules>
+  </module>
+  
+  <module order="3">
+    <unit_description>
+      <name>2. OPTICAL - AIMING</name>
+      <description>
+        Visual aiming system is put in place to allow the units to be initially aimed at each other to establish the link. A visible laser pointer used as the aiming system is mounted on top of the SFP module.
+      </description>
+      <long_description>
+      A well collimated beam increases the power density at the receiver aperture, however its small diameter requires accurate aiming of the transmitter over a specified distance. SFP output in the IR range can not be seen by the naked eye, thus making the initial alignment to the other end of the link extremely difficult. Visual aiming system is designed to indicate where the IR is being pointed.
+
+      Laser pointers in the visible range can effectively replace an optical scope for aiming purpose and are readily sold in eye-safe configurations, in particular green laser pointers are a more suitable choice due to higher eye sensitivity to this particular colour.
+
+      The visual aiming system has to be initially calibrated to be parallel with the IR beam. It is also controlled by the Remote monitoring, allowing it to be turned of once the link has been established, or operate in the flashing mode, giving a visual reference of an operational link.
+      </long_description>
+      <color>rgba(0,97,4,0.7)</color>
+    </unit_description>
+
+    <sub_modules>
+      <sub_module order="1">
+         <unit_description>
+           <name>2.0 VISIBLE LASER</name>
+           <description>
+             Green laser is used for visual aiming and initial alignment of the system.
+           </description>
+             <color>rgba(1,46,5,0.7)</color>
+         </unit_description>
+         <logic_parts>
+           <logic_part order="1">
+             <part_name>Green laser</part_name>
+             <description>Green laser - 10mW, 8mm centre diameter on 7m.</description>
+             <quantity>2</quantity>
+             <schematic_id>1</schematic_id>
+           </logic_part>
+           <logic_part order="2">
+             <part_name>Green laser</part_name>
+             <description>Green laser - 5mW, 10mm centre diameter on 7m.</description>
+             <quantity>2</quantity>
+             <schematic_id>1</schematic_id>
+           </logic_part>
+           <logic_part order="3">
+             <part_name>Green laser</part_name>
+             <description>Green laser - 10mW, 10mm centre diameter on 7m.</description>
+             <quantity>2</quantity>
+             <schematic_id>1</schematic_id>
+           </logic_part>
+         </logic_parts>
+      </sub_module>
+
+      <sub_module order="2">
+         <unit_description>
+           <name>2.1 SYSTEM MANAGEMENT COMMUNICATION</name>
+           <description>
+            Alternative communication between units
+           </description>
+            <color>rgba(0,148,6,0.7)</color>
+         </unit_description>
+      </sub_module>
+    </sub_modules>
+ </module>
+ 
+ <module order="4">
+    <unit_description>
+      <name>3. ELECTRONICS</name>
+      <description>
+        Enables the Ethernet connectivity through a standard wired RJ45 / 8P8C interface.
+      </description>
+      <long_description>
+      Network system module connects the Ethernet IEEE 802.3 at 1Gbps - 1000 BASE-T to the electro-optical interface via an Ethernet PHY controller, a device handling the encoding and modulation of data on the wired interface, to the electro-optical (IR optics) module. Due to the complicated Ethernet design, auto-negotiation and impedance matching, this device must be present at either side of the Ethernet cable for reliable communication. Ethernet PHY devices are available at a relatively low cost.
+      </long_description>
+      <color>rgba(0,122,5,0.7)</color>
+    </unit_description>
+
+    <sub_modules>
+      <sub_module order="1">
+         <unit_description>
+           <name>3.0 POWER</name>
+           <description>
+             Power over ethernet and other power requirements.
+           </description>
+            <color>rgba(1,46,5,0.7)</color>
+         </unit_description>
+      </sub_module>
+
+      <sub_module order="2">
+         <unit_description>
+           <name>3.1 NETWORK</name>
+           <description>
+             Media Converter devices comprise of an Ethernet port and an optical port, converting from one medium to another, internally using an Ethernet PHY chip for the purpose.
+           </description>
+            <color>rgba(0,97,4,0.7)</color>
+         </unit_description>
+      </sub_module>
+
+
+      <sub_module order="3">
+         <unit_description>
+           <name>3.2 CONTROL INTERFACE</name>
+           <description>
+           Control electronics with USB.
+           </description>
+            <color>rgba(0,148,6,0.7)</color>
+         </unit_description>
+      </sub_module>
+      
+      <sub_module order="4">
+         <unit_description>
+           <name>3.3 CALIBRATION TOOLS</name>
+           <description>
+           ...
+           </description>
+            <color>rgba(1,199,5,0.7)</color>
+         </unit_description>
+      </sub_module>
+    </sub_modules>
+ </module>
+ 
+ 
+  <module order="5">
+    <unit_description>
+      <name>4. MECHANICAL</name>
+      <description>
+        Mounting system is a mechanical only module to assemble all the modules together and enable accurate aiming of the unit.
+      </description>
+      <long_description>
+       The current prototype is placed in a fully 3D printable outdoor, however alternative exterior can be constructed.
+
+       The structural design of the system consist of a remote monitoring system connected to the an SFP module, which is placed in the centre of the optical axis of the lens, on a 2-axis kinematic mount for fine adjustment of the focal point to the SFP module. The use of kinematic mount instead of a linear translational stage for the SFP module simplifies the design, while achieving the same effect. The lens is installed in an adjustable lens tube for focus adjustment, while a laser scope is mounted above the SFP module for visual aiming.
+       Such mechanical system can be machined from aluminium without great difficulties.
+      </long_description>
+      <color>rgba(0,148,6,0.7)</color>
+    </unit_description>
+
+    <sub_modules>
+      <sub_module order="1">
+         <unit_description>
+           <name>4.0 OUTDOOR ENCLOSURE</name>
+           <description>
+             The outer mounting enclosure and mechanism.
+           </description>
+           <color>rgba(0,71,4,0.7)</color>
+         </unit_description>
+      </sub_module>
+
+      <sub_module order="2">
+         <unit_description>
+           <name>4.1 SYSTEM ASSEMBLY</name>
+           <description>
+            Internal assembly, mostly 3D printed.
+           </description>
+            <color>rgba(0,122,5,0.7)</color>
+         </unit_description>
+         <logic_parts>
+         <logic_part order="1">
+             <description>...</description>
+             <part_name>Micrometer screw</part_name>
+             <quantity>32</quantity>
+             <schematic_id>1</schematic_id>
+             <options>
+               <option order="1">
+                 <part_name>part1</part_name>
+               </option>
+               <option order="2">
+                 <part_name>part2</part_name>
+               </option>
+             </options>
+           </logic_part>
+         </logic_parts>
+      </sub_module>
+
+      <sub_module order="3">
+         <unit_description>
+           <name>4.2 PRECISE ALIGNMENT</name>
+           <description>
+             Precise alignment system.
+           </description>
+           <color>rgba(0,173,4,0.7)</color>
+         </unit_description>
+         <logic_parts>
+         <logic_part order="1">
+             <description>4/2 mm, 1m.</description>
+             <part_name>Teflon tube</part_name>
+             <quantity>9</quantity>
+             <schematic_id>1</schematic_id>
+           </logic_part>
+         </logic_parts>
+      </sub_module>
+    </sub_modules>
+ </module>
+ 
+
+  
+
+ 
+ <module order="6">
+    <unit_description>
+      <name>5. CONTROL ALGORITHM</name>
+      <description>
+        Wireless remote monitoring system and control unit are used to maximise the received power by adjusting the position with translational stages.
+      </description>
+      <long_description>
+      Remote monitoring of the FSO system is an essential tool for optimising the received power once the link has been established using the visual aid. One can fine tune the system alignment, thus making the system more robust with higher atmospheric attenuation.
+      System is also used to monitor the performance: transmitted and received power, temperature, voltage... which is useful for monitoring performance and debugging purpose.
+
+      It is designed to be independent of the actual FSO data data stream, and allows remote monitoring and control from an independent unit.
+      A combination of Arduino platform and Raspberry Pi small form computer is chosen due to popularity, availability and open-source design.
+      A microcontroller unit (panStamp -  Arduino wireless miniature) is integrated with the media converter and the SFP module, using a sfpddm library for communication via i2c with the SFP, control of the laser pointer and status LEDs on the unit. Another microcontroller unit is is installed on the Raspberry Pi serving as a modem.
+      </long_description>
+      <color>rgba(0,173,4,0.7)</color>
+    </unit_description>
+    
+    <sub_modules>
+      <sub_module order="1">
+         <unit_description>
+           <name>5.0 SENSORS</name>
+           <description>
+            What sensors are required, additionally to capture scientifically relevant data?
+           </description>
+            <color>rgba(0,71,4,0.7)</color>
+         </unit_description>
+      </sub_module>
+
+    
+      <sub_module order="2">
+         <unit_description>
+           <name>5.1 AUTO-TRACKING</name>
+           <description>
+            Algorithm for auto tracking.
+           </description>
+            <color>rgba(0,122,5,0.7)</color>
+         </unit_description>
+      </sub_module>
+      
+    </sub_modules>
+ </module>
+ 
+
+ 
+ <module order="7">
+    <unit_description>
+      <name>6. REMOTE MONITORING</name>
+      <description>
+        ...
+      </description>
+      <color>rgba(1,199,5,0.7)</color>
+    </unit_description>
+    <sub_modules>
+      <sub_module order="1">
+        <unit_description>
+         <name>6.0 REAL-TIME DATA</name>
+         <description>Which data and how is collected.</description>
+         <color>rgba(1,46,5,0.7)</color>
+        </unit_description>
+      </sub_module>
+      <sub_module order="2">
+        <unit_description>
+         <name>6.1 PERFORMANCE FEEDBACK</name>
+         <description>Analysis of data for performance.</description>
+         <color>rgba(0,97,4,0.7)</color>
+        </unit_description>
+      </sub_module>
+      <sub_module order="3">
+        <unit_description>
+         <name>6.2 OPEN DATA-SET</name>
+         <description>Participation in the world wide experiment and data feed-back.</description>
+         <color>rgba(0,148,6,0.7)</color>
+        </unit_description>
+      </sub_module>
+    </sub_modules>
+ </module>
+</modules>
+
+
+<physic_parts>
+  <physic_part order="1">
+    <part_name>part1</part_name>
+    <description>desc1...</description>
+    <price>100</price>
+  </physic_part>
+  <physic_part order="2">
+    <part_name>part2</part_name>
+    <description>desc2...</description>
+    <price>100</price>
+  </physic_part>
+  <physic_part order="3">
+    <part_name>part3</part_name>
+    <description>desc3...</description>
+    <price>100</price>
+  </physic_part>
+</physic_parts>
+
+</project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
