@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="example.xsl"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="example-schema.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <unit>
+    <name>SYSTEM NAME</name>
+    <description>
+      <abstract>
+    Very brief description of the system.
+    </abstract>
+      <long_description/>
+      <what>
+    Specific short description of what the system does, 100 words limited.
+    </what>
+      <why>
+    Specific short description of why the system is used/ what problem it solves and how much it might reduce costs, 100 words limited.
+    </why>
+      <how>
+     Specific short description of how the functionality is achieved or one can reproduce it, 100 words limited.
+    </how>
+      <tags>
+        <tag>Tag1</tag>
+        <tag>Tag2</tag>
+        <tag>Tag3</tag>
+      </tags>
+    </description>
+    <video>
+      <description>Intro video</description>
+      <url>http://www.youtube.com/embed/yq6hBNCzH10</url>
+    </video>
+    <image/>
+    <logic_parts>
+      <logic_part>
+        <name>Logic part 1</name>
+        <description>Destcription of first logic part of the system.</description>
+        <quantity>3</quantity>
+        <image/>
+        <designator>Designator for Logic part 1.</designator>
+        <digital_part>
+          <file>example.txt</file>
+          <url>http://www.irnas.eu</url>
+          <parameters>example.txt</parameters>
+        </digital_part>
+        <physical_part_tags>
+          <part_tag>physical_part1</part_tag>
+          <part_tag>physical_part2</part_tag>
+        </physical_part_tags>
+        <logic_part_tag>logic_part1</logic_part_tag>
+      </logic_part>
+      <logic_part>
+        <name>Logic part 2</name>
+        <description>Destcription of the second logic part of the system.</description>
+        <quantity>10</quantity>
+        <image/>
+        <designator>Designator for Logic part 2.</designator>
+        <digital_part>
+          <file>example.txt</file>
+          <url>http://www.irnas.eu</url>
+          <parameters>example.txt</parameters>
+        </digital_part>
+        <physical_part_tags>
+          <part_tag>physical_part1</part_tag>
+          <part_tag>physical_part2</part_tag>
+        </physical_part_tags>
+        <logic_part_tag>logic_part2</logic_part_tag>
+      </logic_part>
+    </logic_parts>
+    <assembly_instruction>
+      <step>
+        <description>Step 1 instructions for the whole system.</description>
+        <image>img/img1.jpg</image>
+        <video/>
+        <logic_part_tags>
+          <part_tag>logic_part1</part_tag>
+          <part_tag>logic_part2</part_tag>
+        </logic_part_tags>
+      </step>
+      <step>
+        <description>Step 2 instructions for the whole system.</description>
+        <image>img/img1.jpg</image>
+        <video/>
+        <logic_part_tags>
+          <part_tag>logic_part1</part_tag>
+          <part_tag>logic_part2</part_tag>
+        </logic_part_tags>
+      </step>
+    </assembly_instruction>
+    <test_instruction>
+      <step>
+        <description>Step 1 instructions on how to test the whole system.</description>
+        <image>img/img1.jpg</image>
+        <video/>
+        <logic_part_tags>
+          <part_tag>logic_part1</part_tag>
+          <part_tag>logic_part2</part_tag>
+        </logic_part_tags>
+      </step>
+      <step>
+        <description>Step 2 instructions on how to test the whole system.</description>
+        <image>img/img1.jpg</image>
+        <video/>
+        <logic_part_tags>
+          <part_tag>logic_part1</part_tag>
+          <part_tag>logic_part2</part_tag>
+        </logic_part_tags>
+      </step>
+    </test_instruction>
+    <user_manual>
+      <step>
+        <description>Step 1 in user manual on how to use the whole system.</description>
+        <image>img/img1.jpg</image>
+        <video/>
+        <logic_part_tags>
+          <part_tag>logic_part1</part_tag>
+          <part_tag>logic_part2</part_tag>
+        </logic_part_tags>
+      </step>
+      <step>
+        <description>Step 2 in user manual on how to use the whole system.</description>
+        <image>img/img1.jpg</image>
+        <video/>
+        <logic_part_tags>
+          <part_tag>logic_part1</part_tag>
+          <part_tag>logic_part2</part_tag>
+        </logic_part_tags>
+      </step>
+    </user_manual>
+    <licensing>
+      <description>Licensing for the whole system.</description>
+      <file>example.txt</file>
+      <url>http://www.irnas.eu</url>
+    </licensing>
+    <safety>
+      <description>Safety for the whole system.</description>
+      <file>example.txt</file>
+      <url>http://www.irnas.eu</url>
+    </safety>
+    
+    <children>
+      <unit order="1">
+        <name> UNIT1</name>
+        <description>
+          <abstract>
+            Very brief description of the first unit (module).
+            </abstract>
+          <long_description>
+           Description of the first unit (module).
+          </long_description>
+          <what>
+            Specific short description of what the unit 1 does, 100 words limited.
+            </what>
+          <why>
+            Specific short description of why the unit 1 is used/ what problem it solves and how much it might reduce costs, 100 words limited.
+            </why>
+          <how>
+             Specific short description of how the functionality is achieved or one can reproduce it, 100 words limited.
+            </how>
+          <tags>
+            <tag>Tag1</tag>
+            <tag>Tag2</tag>
+            <tag>Tag3</tag>
+          </tags>
+        </description>
+         <video>
+      <description>Intro video</description>
+      <url>http://www.youtube.com/embed/yq6hBNCzH10</url>
+    </video>
+        <image>img1.jpg</image>
+        <logic_parts>
+          <logic_part>
+            <name>Logic part 3</name>
+            <description>Destcription of first logic part of the unit 1.</description>
+            <quantity>3</quantity>
+            <image/>
+            <designator>Designator for Logic part 3.</designator>
+            <digital_part>
+              <file>example.txt</file>
+              <url>http://www.irnas.eu</url>
+              <parameters>example.txt</parameters>
+            </digital_part>
+            <physical_part_tags>
+              <part_tag>physical_part1</part_tag>
+              <part_tag>physical_part2</part_tag>
+            </physical_part_tags>
+            <logic_part_tag>logic_part3</logic_part_tag>
+          </logic_part>
+          <logic_part>
+            <name>Logic part 4</name>
+            <description>Destcription of the second logic part of the unit 1.</description>
+            <quantity>10</quantity>
+            <image/>
+            <designator>Designator for Logic part 4.</designator>
+            <digital_part>
+              <file>example.txt</file>
+              <url>http://www.irnas.eu</url>
+              <parameters>example.txt</parameters>
+            </digital_part>
+            <physical_part_tags>
+              <part_tag>physical_part1</part_tag>
+              <part_tag>physical_part2</part_tag>
+            </physical_part_tags>
+            <logic_part_tag>logic_part4</logic_part_tag>
+          </logic_part>
+        </logic_parts>
+        <assembly_instruction>
+          <step>
+            <description>Step 1 instructions for the unit 1.</description>
+            <image>img/img1.jpg</image>
+            <video/>
+            <logic_part_tags>
+              <part_tag>logic_part1</part_tag>
+              <part_tag>logic_part2</part_tag>
+            </logic_part_tags>
+          </step>
+          <step>
+            <description>Step 2 instructions for the unit 1.</description>
+           <image>img/img1.jpg</image>
+            <video/>
+            <logic_part_tags>
+              <part_tag>logic_part1</part_tag>
+              <part_tag>logic_part2</part_tag>
+            </logic_part_tags>
+          </step>
+        </assembly_instruction>
+        <test_instruction>
+          <step>
+            <description>Step 1 instructions on how to test the unit 1.</description>
+            <image>img/img1.jpg</image>
+            <video/>
+            <logic_part_tags>
+              <part_tag>logic_part1</part_tag>
+              <part_tag>logic_part2</part_tag>
+            </logic_part_tags>
+          </step>
+          <step>
+            <description>Step 2 instructions on how to test the unit 1.</description>
+            <image>img/img1.jpg</image>
+            <video/>
+            <logic_part_tags>
+              <part_tag>logic_part1</part_tag>
+              <part_tag>logic_part2</part_tag>
+            </logic_part_tags>
+          </step>
+        </test_instruction>
+        <user_manual>
+          <step>
+            <description>Step 1 in user manual on how to use unit 1.</description>
+            <image>img/img1.jpg</image>
+            <video/>
+            <logic_part_tags>
+              <part_tag>logic_part1</part_tag>
+              <part_tag>logic_part2</part_tag>
+            </logic_part_tags>
+          </step>
+          <step>
+            <description>Step 2 in user manual on how to unit 1.</description>
+            <image>img/img1.jpg</image>
+            <video/>
+            <logic_part_tags>
+              <part_tag>logic_part1</part_tag>
+              <part_tag>logic_part2</part_tag>
+            </logic_part_tags>
+          </step>
+        </user_manual>
+        <licensing>
+          <description>Licensing for the unit 1.</description>
+          <file>example.txt</file>
+          <url>http://www.irnas.eu</url>
+        </licensing>
+        <safety>
+          <description>Safety for the unit 1.</description>
+          <file>example.txt</file>
+          <url>http://www.irnas.eu</url>
+        </safety>
+        
+        <children>
+            <unit order="1">
+                <name> UNIT1a</name>
+                <description>
+                  <abstract>
+                    Very brief description of the first sub-unit (module).
+                    </abstract>
+                  <long_description/>
+                  <what>
+                    Specific short description of what the unit 1a does, 100 words limited.
+                    </what>
+                  <why>
+                    Specific short description of why the unit 1a is used/ what problem it solves and how much it might reduce costs, 100 words limited.
+                    </why>
+                  <how>
+                     Specific short description of how the functionality is achieved or one can reproduce it, 100 words limited.
+                    </how>
+                  <tags>
+                    <tag>Tag1</tag>
+                    <tag>Tag2</tag>
+                    <tag>Tag3</tag>
+                  </tags>
+                </description>
+                 <video>
+      <description>Intro video</description>
+      <url>http://www.youtube.com/embed/yq6hBNCzH10</url>
+    </video>
+                <image/>
+                <logic_parts>
+                  <logic_part>
+                    <name>Logic part 3a</name>
+                    <description>Description of first logic part of the unit 1a.</description>
+                    <quantity>3</quantity>
+                    <image/>
+                    <designator>Designator for Logic part 3a.</designator>
+                    <digital_part>
+                      <file>example.txt</file>
+                      <url>http://www.irnas.eu</url>
+                      <parameters>example.txt</parameters>
+                    </digital_part>
+                    <physical_part_tags>
+                      <part_tag>physical_part1</part_tag>
+                      <part_tag>physical_part2</part_tag>
+                    </physical_part_tags>
+                    <logic_part_tag>logic_part3a</logic_part_tag>
+                  </logic_part>
+                  <logic_part>
+                    <name>Logic part 4a</name>
+                    <description>Description of the second logic part of the unit 1a.</description>
+                    <quantity>10</quantity>
+                    <image/>
+                    <designator>Designator for Logic part 4a.</designator>
+                    <digital_part>
+                      <file>example.txt</file>
+                      <url>http://www.irnas.eu</url>
+                      <parameters>example.txt</parameters>
+                    </digital_part>
+                    <physical_part_tags>
+                      <part_tag>physical_part1</part_tag>
+                      <part_tag>physical_part2</part_tag>
+                    </physical_part_tags>
+                    <logic_part_tag>logic_part4a</logic_part_tag>
+                  </logic_part>
+                </logic_parts>
+                <assembly_instruction>
+                  <step>
+                    <description>Step 1 instructions for the unit 1a.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                  <step>
+                    <description>Step 2 instructions for the unit 1a.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                </assembly_instruction>
+                <test_instruction>
+                  <step>
+                    <description>Step 1 instructions on how to test the unit 1a.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                  <step>
+                    <description>Step 2 instructions on how to test the unit 1a.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                </test_instruction>
+                <user_manual>
+                  <step>
+                    <description>Step 1 in user manual on how to use unit 1a.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                  <step>
+                    <description>Step 2 in user manual on how to unit 1a.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                </user_manual>
+                <licensing>
+                  <description>Licensing for the unit 1a.</description>
+                  <file>example.txt</file>
+                  <url>http://www.irnas.eu</url>
+                </licensing>
+                <safety>
+                  <description>Safety for the unit 1a.</description>
+                  <file>example.txt</file>
+                  <url>http://www.irnas.eu</url>
+                </safety>
+              </unit>
+              
+              <unit order="2">
+                <name> UNIT1b</name>
+                <description>
+                  <abstract>
+                    Very brief description of the second sub-unit (module).
+                    </abstract>
+                  <long_description/>
+                  <what>
+                    Specific short description of what the unit 1b does, 100 words limited.
+                    </what>
+                  <why>
+                    Specific short description of why the unit 1b is used/ what problem it solves and how much it might reduce costs, 100 words limited.
+                    </why>
+                  <how>
+                     Specific short description of how the functionality is achieved or one can reproduce it, 100 words limited.
+                    </how>
+                  <tags>
+                    <tag>Tag1</tag>
+                    <tag>Tag2</tag>
+                    <tag>Tag3</tag>
+                  </tags>
+                </description>
+                 <video>
+      <description>Intro video</description>
+      <url>http://www.youtube.com/embed/yq6hBNCzH10</url>
+    </video>
+                <image/>
+                <logic_parts>
+                  <logic_part>
+                    <name>Logic part 3b</name>
+                    <description>Description of first logic part of the unit 1b.</description>
+                    <quantity>3</quantity>
+                    <image/>
+                    <designator>Designator for Logic part 3b.</designator>
+                    <digital_part>
+                      <file>example.txt</file>
+                      <url>http://www.irnas.eu</url>
+                      <parameters>example.txt</parameters>
+                    </digital_part>
+                    <physical_part_tags>
+                      <part_tag>physical_part1</part_tag>
+                      <part_tag>physical_part2</part_tag>
+                    </physical_part_tags>
+                    <logic_part_tag>logic_part3b</logic_part_tag>
+                  </logic_part>
+                  <logic_part>
+                    <name>Logic part 4b</name>
+                    <description>Description of the second logic part of the unit 1b.</description>
+                    <quantity>10</quantity>
+                    <image/>
+                    <designator>Designator for Logic part 4b.</designator>
+                    <digital_part>
+                      <file>example.txt</file>
+                      <url>http://www.irnas.eu</url>
+                      <parameters>example.txt</parameters>
+                    </digital_part>
+                    <physical_part_tags>
+                      <part_tag>physical_part1</part_tag>
+                      <part_tag>physical_part2</part_tag>
+                    </physical_part_tags>
+                    <logic_part_tag>logic_part4b</logic_part_tag>
+                  </logic_part>
+                </logic_parts>
+                <assembly_instruction>
+                  <step>
+                    <description>Step 1 instructions for the unit 1b.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                  <step>
+                    <description>Step 2 instructions for the unit 1b.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                </assembly_instruction>
+                <test_instruction>
+                  <step>
+                    <description>Step 1 instructions on how to test the unit 1b.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                  <step>
+                    <description>Step 2 instructions on how to test the unit 1b.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                </test_instruction>
+                <user_manual>
+                  <step>
+                    <description>Step 1 in user manual on how to use unit 1b.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                  <step>
+                    <description>Step 2 in user manual on how to unit 1b.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                </user_manual>
+                <licensing>
+                  <description>Licensing for the unit 1b.</description>
+                  <file>example.txt</file>
+                  <url>http://www.irnas.eu</url>
+                </licensing>
+                <safety>
+                  <description>Safety for the unit 1b.</description>
+                  <file>example.txt</file>
+                  <url>http://www.irnas.eu</url>
+                </safety>
+              </unit>
+        </children>
+        
+      </unit>
+      
+      <unit order="2">
+        <name> UNIT2</name>
+        <description>
+          <abstract>
+            Very brief description of the second unit (module).
+            </abstract>
+          <long_description>
+            Description of the second unit (module).
+          </long_description>
+          <what>
+            Specific short description of what the unit 2 does, 100 words limited.
+            </what>
+          <why>
+            Specific short description of why the unit 2 is used/ what problem it solves and how much it might reduce costs, 100 words limited.
+            </why>
+          <how>
+             Specific short description of how the functionality is achieved or one can reproduce it, 100 words limited.
+            </how>
+          <tags>
+            <tag>Tag1</tag>
+            <tag>Tag2</tag>
+            <tag>Tag3</tag>
+          </tags>
+        </description>
+         <video>
+      <description>Intro video</description>
+      <url>http://www.youtube.com/embed/yq6hBNCzH10</url>
+    </video>
+        <image/>
+        <logic_parts>
+          <logic_part>
+            <name>Logic part 5</name>
+            <description>Destcription of first logic part of the unit 2.</description>
+            <quantity>3</quantity>
+            <image/>
+            <designator>Designator for Logic part 5.</designator>
+            <digital_part>
+              <file>example.txt</file>
+              <url>http://www.irnas.eu</url>
+              <parameters>example.txt</parameters>
+            </digital_part>
+            <physical_part_tags>
+              <part_tag>physical_part1</part_tag>
+              <part_tag>physical_part2</part_tag>
+            </physical_part_tags>
+            <logic_part_tag>logic_part5</logic_part_tag>
+          </logic_part>
+          <logic_part>
+            <name>Logic part 6</name>
+            <description>Destcription of the second logic part of the unit 2.</description>
+            <quantity>10</quantity>
+            <image/>
+            <designator>Designator for Logic part 6.</designator>
+            <digital_part>
+              <file>example.txt</file>
+              <url>http://www.irnas.eu</url>
+              <parameters>example.txt</parameters>
+            </digital_part>
+            <physical_part_tags>
+              <part_tag>physical_part1</part_tag>
+              <part_tag>physical_part2</part_tag>
+            </physical_part_tags>
+            <logic_part_tag>logic_part6</logic_part_tag>
+          </logic_part>
+        </logic_parts>
+        <assembly_instruction>
+          <step>
+            <description>Step 1 instructions for the unit 2.</description>
+            <image>img/img1.jpg</image>
+            <video/>
+            <logic_part_tags>
+              <part_tag>logic_part1</part_tag>
+              <part_tag>logic_part2</part_tag>
+            </logic_part_tags>
+          </step>
+          <step>
+            <description>Step 2 instructions for the unit 2.</description>
+            <image>img/img1.jpg</image>
+            <video/>
+            <logic_part_tags>
+              <part_tag>logic_part1</part_tag>
+              <part_tag>logic_part2</part_tag>
+            </logic_part_tags>
+          </step>
+        </assembly_instruction>
+        <test_instruction>
+          <step>
+            <description>Step 1 instructions on how to test the unit 2.</description>
+            <image>img/img1.jpg</image>
+            <video/>
+            <logic_part_tags>
+              <part_tag>logic_part1</part_tag>
+              <part_tag>logic_part2</part_tag>
+            </logic_part_tags>
+          </step>
+          <step>
+            <description>Step 2 instructions on how to test the unit 2.</description>
+           <image>img/img1.jpg</image>
+            <video/>
+            <logic_part_tags>
+              <part_tag>logic_part1</part_tag>
+              <part_tag>logic_part2</part_tag>
+            </logic_part_tags>
+          </step>
+        </test_instruction>
+        <user_manual>
+          <step>
+            <description>Step 1 in user manual on how to use unit 2.</description>
+            <image>img/img1.jpg</image>
+            <video/>
+            <logic_part_tags>
+              <part_tag>logic_part1</part_tag>
+              <part_tag>logic_part2</part_tag>
+            </logic_part_tags>
+          </step>
+          <step>
+            <description>Step 2 in user manual on how to unit 2.</description>
+            <image>img/img1.jpg</image>
+            <video/>
+            <logic_part_tags>
+              <part_tag>logic_part1</part_tag>
+              <part_tag>logic_part2</part_tag>
+            </logic_part_tags>
+          </step>
+        </user_manual>
+        <licensing>
+          <description>Licensing for the unit 2.</description>
+          <file>example.txt</file>
+          <url>http://www.irnas.eu</url>
+        </licensing>
+        <safety>
+          <description>Safety for the unit 2.</description>
+          <file>example.txt</file>
+          <url>http://www.irnas.eu</url>
+        </safety>
+        
+        <children>
+             <unit order="1">
+                <name> UNIT2a</name>
+                <description>
+                  <abstract>
+                    Very brief description of the first sub-unit (sub-module).
+                    </abstract>
+                  <long_description/>
+                  <what>
+                    Specific short description of what the unit 2a does, 100 words limited.
+                    </what>
+                  <why>
+                    Specific short description of why the unit 2a is used/ what problem it solves and how much it might reduce costs, 100 words limited.
+                    </why>
+                  <how>
+                     Specific short description of how the functionality is achieved or one can reproduce it, 100 words limited.
+                    </how>
+                  <tags>
+                    <tag>Tag1</tag>
+                    <tag>Tag2</tag>
+                    <tag>Tag3</tag>
+                  </tags>
+                </description>
+                 <video>
+      <description>Intro video</description>
+      <url>http://www.youtube.com/embed/yq6hBNCzH10</url>
+    </video>
+                <image/>
+                <logic_parts>
+                  <logic_part>
+                    <name>Logic part 5a</name>
+                    <description>Description of first logic part of the unit 2a.</description>
+                    <quantity>3</quantity>
+                    <image/>
+                    <designator>Designator for Logic part 5a.</designator>
+                    <digital_part>
+                      <file>example.txt</file>
+                      <url>http://www.irnas.eu</url>
+                      <parameters>example.txt</parameters>
+                    </digital_part>
+                    <physical_part_tags>
+                      <part_tag>physical_part1</part_tag>
+                      <part_tag>physical_part2</part_tag>
+                    </physical_part_tags>
+                    <logic_part_tag>logic_part5a</logic_part_tag>
+                  </logic_part>
+                  <logic_part>
+                    <name>Logic part 6a</name>
+                    <description>Description of the second logic part of the unit 2a.</description>
+                    <quantity>10</quantity>
+                    <image/>
+                    <designator>Designator for Logic part 6a.</designator>
+                    <digital_part>
+                      <file>example.txt</file>
+                      <url>http://www.irnas.eu</url>
+                      <parameters>example.txt</parameters>
+                    </digital_part>
+                    <physical_part_tags>
+                      <part_tag>physical_part1</part_tag>
+                      <part_tag>physical_part2</part_tag>
+                    </physical_part_tags>
+                    <logic_part_tag>logic_part6a</logic_part_tag>
+                  </logic_part>
+                </logic_parts>
+                <assembly_instruction>
+                  <step>
+                    <description>Step 1 instructions for the unit 2a.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                  <step>
+                    <description>Step 2 instructions for the unit 2a.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                </assembly_instruction>
+                <test_instruction>
+                  <step>
+                    <description>Step 1 instructions on how to test the unit 2a.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                  <step>
+                    <description>Step 2 instructions on how to test the unit 2a.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                </test_instruction>
+                <user_manual>
+                  <step>
+                    <description>Step 1 in user manual on how to use unit 2a.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                  <step>
+                    <description>Step 2 in user manual on how to unit 2a.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                </user_manual>
+                <licensing>
+                  <description>Licensing for the unit 2a.</description>
+                  <file>example.txt</file>
+                  <url>http://www.irnas.eu</url>
+                </licensing>
+                <safety>
+                  <description>Safety for the unit 2a.</description>
+                  <file>example.txt</file>
+                  <url>http://www.irnas.eu</url>
+                </safety>
+              </unit>
+
+              <unit order="2">
+                <name> UNIT2b</name>
+                <description>
+                  <abstract>
+                    Very brief description of the second sub-unit (module).
+                    </abstract>
+                  <long_description/>
+                  <what>
+                    Specific short description of what the unit 2b does, 100 words limited.
+                    </what>
+                  <why>
+                    Specific short description of why the unit 2b is used/ what problem it solves and how much it might reduce costs, 100 words limited.
+                    </why>
+                  <how>
+                     Specific short description of how the functionality is achieved or one can reproduce it, 100 words limited.
+                    </how>
+                  <tags>
+                    <tag>Tag1</tag>
+                    <tag>Tag2</tag>
+                    <tag>Tag3</tag>
+                  </tags>
+                </description>
+                 <video>
+      <description>Intro video</description>
+      <url>http://www.youtube.com/embed/yq6hBNCzH10</url>
+    </video>
+                <logic_parts>
+                  <logic_part>
+                    <name>Logic part 5b</name>
+                    <description>Description of first logic part of the unit 2b.</description>
+                    <quantity>3</quantity>
+                    <image/>
+                    <designator>Designator for Logic part 5b.</designator>
+                    <digital_part>
+                      <file>example.txt</file>
+                      <url>http://www.irnas.eu</url>
+                      <parameters>example.txt</parameters>
+                    </digital_part>
+                    <physical_part_tags>
+                      <part_tag>physical_part1</part_tag>
+                      <part_tag>physical_part2</part_tag>
+                    </physical_part_tags>
+                    <logic_part_tag>logic_part5b</logic_part_tag>
+                  </logic_part>
+                  <logic_part>
+                    <name>Logic part 6b</name>
+                    <description>Description of the second logic part of the unit 2b.</description>
+                    <quantity>10</quantity>
+                    <image/>
+                    <designator>Designator for Logic part 4b.</designator>
+                    <digital_part>
+                      <file>example.txt</file>
+                      <url>http://www.irnas.eu</url>
+                      <parameters>example.txt</parameters>
+                    </digital_part>
+                    <physical_part_tags>
+                      <part_tag>physical_part1</part_tag>
+                      <part_tag>physical_part2</part_tag>
+                    </physical_part_tags>
+                    <logic_part_tag>logic_part6b</logic_part_tag>
+                  </logic_part>
+                </logic_parts>
+                <assembly_instruction>
+                  <step>
+                    <description>Step 1 instructions for the unit 2b.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                  <step>
+                    <description>Step 2 instructions for the unit 2b.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                </assembly_instruction>
+                <test_instruction>
+                  <step>
+                    <description>Step 1 instructions on how to test the unit 2b.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                  <step>
+                    <description>Step 2 instructions on how to test the unit 2b.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                </test_instruction>
+                <user_manual>
+                  <step>
+                    <description>Step 1 in user manual on how to use unit 2b.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                  <step>
+                    <description>Step 2 in user manual on how to unit 2b.</description>
+                    <image>img/img1.jpg</image>
+                    <video/>
+                    <logic_part_tags>
+                      <part_tag>logic_part1</part_tag>
+                      <part_tag>logic_part2</part_tag>
+                    </logic_part_tags>
+                  </step>
+                </user_manual>
+                <licensing>
+                  <description>Licensing for the unit 2b.</description>
+                  <file>example.txt</file>
+                  <url>http://www.irnas.eu</url>
+                </licensing>
+                <safety>
+                  <description>Safety for the unit 2b.</description>
+                  <file>example.txt</file>
+                  <url>http://www.irnas.eu</url>
+                </safety>
+              </unit>
+        </children>
+      </unit>
+    </children>
+  </unit>
+  
+  <physical_parts>
+    <physical_part>
+      <name>Physic part 1</name>
+      <description>Description of physic part 1.</description>
+      <supplier>Supplier</supplier>
+      <supplier_number>000</supplier_number>
+      <manufacturer_number>000</manufacturer_number>
+      <url>http://www.irnas.eu</url>
+      <physical_part_tag>physical_part1</physical_part_tag>
+    </physical_part>
+    
+    <physical_part>
+      <name>Physic part 2</name>
+      <description>Description of physic part 2.</description>
+      <supplier>Supplier</supplier>
+      <supplier_number>000</supplier_number>
+      <manufacturer_number>000</manufacturer_number>
+      <url>http://www.irnas.eu</url>
+      <physical_part_tag>physical_part2</physical_part_tag>
+    </physical_part>
+
+  </physical_parts>
+</project>
+
+
+
+
+
+
+

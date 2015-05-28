@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" version="1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="project" type="typeProject"/>
+    <xs:complexType name="typeProject">
+      <xs:sequence>
+        <xs:element name="unit" type="typeUnit"/>
+        <xs:element name="physical_parts" type="typephysical_parts" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+
+<xs:element name="unit" type="typeUnit"/>
+    <xs:complexType name="typeUnit">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="description" type="typeDescription"/>
+            <xs:element name="video" type="typeVideo" minOccurs="0"/>
+            <xs:element name="image" type="xs:normalizedString" minOccurs="0"/>
+            <xs:element name="logic_parts" type="typeLogic_parts" minOccurs="0"/>
+            <xs:element name="assembly_instruction" type="typeAssembly_instruction" minOccurs="0"/>
+            <xs:element name="test_instruction" type="typeTest_instruction" minOccurs="0"/>
+            <xs:element name="user_manual" type="typeUser_manual" minOccurs="0"/>
+            <xs:element name="licensing" type="typeLicensing" minOccurs="0"/>
+            <xs:element name="safety" type="typeSafety" minOccurs="0"/>
+            <xs:element name="children" type="typeChildren" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="order" type="xs:positiveInteger"/>
+    </xs:complexType>
+    
+    <xs:complexType name="typeChildren">
+        <xs:all>
+            <xs:element name="unit" type="typeUnit" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:all>
+    </xs:complexType>
+    
+    
+    <xs:complexType name="typeDescription">
+        <xs:all>
+            <xs:element name="abstract" type="xs:string" minOccurs="0"/>
+            <xs:element name="long_description" type="xs:string" minOccurs="0"/>
+            <xs:element name="what" type="xs:string" minOccurs="0"/>
+            <xs:element name="why" type="xs:string" minOccurs="0"/>
+            <xs:element name="how" type="xs:string" minOccurs="0"/>
+            <xs:element name="tags" type="typeTags" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="typeTags">
+        <xs:all>
+            <xs:element name="tag" type="xs:string" maxOccurs="unbounded"/>
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="typeVideo">
+        <xs:all>
+            <xs:element name="description" type="xs:token" minOccurs="0"/>
+            <xs:element name="url" type="xs:normalizedString" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="typeLogic_parts">
+        <xs:sequence>
+            <xs:element name="logic_part" type="typeLogic_part" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeLogic_part">
+        <xs:all>
+            <xs:element name="name" type="xs:string" minOccurs="0"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="quantity" type="xs:positiveInteger" minOccurs="0"/>
+            <xs:element name="image" type="xs:normalizedString" minOccurs="0"/>
+            <xs:element name="designator" type="xs:string" minOccurs="0"/>
+            <xs:element name="digital_part" type="typeDigital_part" minOccurs="0"/>
+            <xs:element name="physical_part_tags" type="typePart_tags" minOccurs="0"/>
+            <xs:element name="logic_part_tag" type="xs:normalizedString" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="typeDigital_part">
+        <xs:all>
+            <xs:element name="file" type="xs:normalizedString" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="url" type="xs:normalizedString" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="parameters" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="typePart_tegs">
+        <xs:all>
+           <xs:element name="part_tag" type="xs:normalizedString" maxOccurs="unbounded"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="typeAssembly_instruction">
+        <xs:all>
+            <xs:element name="step" type="typeStep" maxOccurs="unbounded"/>
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="typeTest_instruction">
+        <xs:all>
+            <xs:element name="step" type="typeStep" maxOccurs="unbounded"/>
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="typeUser_manual">
+        <xs:all>
+            <xs:element name="step" type="typeStep" maxOccurs="unbounded"/>
+        </xs:all>
+    </xs:complexType>
+    
+    
+    <xs:complexType name="typeStep">
+        <xs:all>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="video" type="typeVideo" minOccurs="0"/>
+            <xs:element name="image" type="xs:normalizedString" minOccurs="0"/>
+            <xs:element name="logic_part_tags" type="typePart_tags" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="typeLicensing">
+        <xs:all>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="file" type="xs:normalizedString" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="url" type="xs:normalizedString" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="typeSafety">
+        <xs:all>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="file" type="xs:normalizedString" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="url" type="xs:normalizedString" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:all>
+    </xs:complexType>
+    
+    <xs:complexType name="typephysical_parts">
+        <xs:sequence>
+            <xs:element name="physical_part" type="typephysical_part" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typephysical_part">
+        <xs:all>
+            <xs:element name="description" type="xs:string"  minOccurs="0"/>
+            <xs:element name="name" type="xs:string" minOccurs="0"/>
+            <xs:element name="supplier" type="xs:string" minOccurs="0"/>
+            <xs:element name="supplier_number" type="xs:normalizedString"  minOccurs="0"/>
+            <xs:element name="manufacturer_number" type="xs:normalizedString"  minOccurs="0"/>
+            <xs:element name="url" type="xs:normalizedString" minOccurs="0"/>
+            <xs:element name="physical_part_tag" type="xs:normalizedString" minOccurs="0"/>
+        </xs:all>
+    </xs:complexType>
+    
+</xs:schema>
+
+
+
+
+
